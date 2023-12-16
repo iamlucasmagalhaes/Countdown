@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*container com o cronômetro e com o foguete*/
+#container{
+    display: flex;
+    gap: 82px;
+}
+
+/*cronômetro*/
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+}
+
+/*texto principal*/
+h1{
+    width: 490px;
+    height: 54px;
+
+    color: var(--purple);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3.78px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+/*caixa com os dias, horas, minutos e segundos*/
+.element{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*todas as divs dentro da caixa element*/
+.element div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--black);
+    font-size: 68px;
+    font-weight: 400;
+}
+
+/*legenda para cada parte do cronômetro*/
+span.time{
+    color: var(--light-grey);
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize; 
+}
+
+/*legenda*/
+p{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 46px auto 31px auto;
+}
+
+button{
+   width: 160px;
+   height: 46px;
+   border-radius: 10px;
+   background-color: var(--purple); 
+   border: none;
+   margin: 0 auto;
+
+   color: #FFF;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.rocket{
+    background-color: blue;
+    width: 607px;
+    height: 388px;
+}
